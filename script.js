@@ -1,18 +1,76 @@
 
 
-let Questions = [
-{
-    question: "how many apples are there?",
-    answer: ["1", "2", "3", "4" ],
-    correctAnswer: "1"
-},
-{
-    question: "what's your name?",
-    answer: ["a", "b", "c", "d" ],
-    correctAnswer: "a"
+
+
+
+
+let someClick = document.querySelectorAll(".click");
+let answer = document.querySelectorAll(".click.An");
+console.log(answer);
+
+
+
+// score 
+
+let score = 0 ;
+
+
+someClick.forEach(
+    function(e, i) {
+        e.addEventListener("click", function(){ 
+            var An1 = event.target.classList.contains('An') 
+            // console.log(An1)
+            // console.log(answer)
+            if (An1 === true) {
+                    alert("correct")
+                    score++
+                    console.log(score)
+                } else {
+                        alert("wrong")
+                    }
+        });   
+    }
+)
+
+// score
+
+// if click = class "An" pop up correct 
+
+// incriment score value 
+
+// else console log wrong 
+
+// reset 
+
+function reset () {
+score = 0; 
+
+
 }
 
-]
+
+
+// setTimeout(function(){ 
+    
+//     alert("Hello"); }
+
+// ,6000);
+
+////////////
+
+// let Questions = [
+// {
+//     question: "how many apples are there?",
+//     answer: ["1", "2", "3", "4" ],
+//     correctAnswer: "1"
+// },
+// {
+//     question: "what's your name?",
+//     answer: ["a", "b", "c", "d" ],
+//     correctAnswer: "a"
+// }
+
+// ]
 
 // console.log (Questions)
 // get buttons from the html 

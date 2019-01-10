@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/01/14/55/skeleton-1561177__340.png");
+    background-color: beige;
 }
 
 
@@ -27,3 +29,21 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+#Q1, #Q2, #Q3, #Q4, #Q5, #Q6, #Q7 {
+    text-decoration: none;
+    color: black;
+
+}
+
+#Q1:hover, #Q2:hover, #Q3:hover, #Q4:hover, #Q5:hover, #Q6:hover, #Q7:hover {
+    text-decoration: none;
+
+  font-size: 20px; 
+}
+.card:hover{
+
+    background-color: gray;
+}
+
+
+
