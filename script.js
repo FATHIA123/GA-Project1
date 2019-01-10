@@ -42,9 +42,13 @@ someClick.forEach(
 
 // reset 
 
-function reset () {
-score = 0; 
+// add event listener to the reset button 
 
+ var R = document.getElementById("resetButton")
+
+R.addEventListener("click", function () {reset();} )
+function reset () {
+     score = 0 
 
 }
 
