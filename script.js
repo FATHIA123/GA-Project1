@@ -2,7 +2,7 @@
 
 var Questions = [
 {
-    question: "how old are you?",
+    question: "how many apples are there?",
     answer: ["1", "2", "3", "4" ],
     correctAnswer: "1"
 },
@@ -18,8 +18,31 @@ console.log (Questions)
 // get buttons from the html 
 
 // change the question in HTML 
-let Qes = document.getElementsByClassName('btn').innerText
-console.log(Qes) 
+
+
+var optionList1 = document.getElementsByClassName("A")
+
+
+for (let i=0; i< Questions.length; i ++) {
+    const selector = `Q${i+1}`
+    let Qes = document.getElementById(selector)
+    var changed =  Qes.innerHTML = Questions[i].question
+    // console.log(Qes )
+    // console.log(changed)
+
+    // console.log(Questions[i].answer)
+    // do another loop for answers
+
+    for (let j = 0; j < Questions[i].answer.length; j++) {
+
+        // let Op =/
+        // console.log(Questions[i].answer[j]) 
+        // do innerhtml here
+        console.log(optionList1[j])
+
+    }
+}
+
 
 // if (Qes.innerHTML === nullv) {
 //     Qes.innerHTML = Questions[0].question.value;
@@ -29,13 +52,11 @@ console.log(Qes)
 
 
 
-Qes = Questions[0].question.value 
 
-var optionList1 = document.getElementsByClassName("A")
 var optionList2 = document.getElementsByClassName("B")
 
 
-console.log(optionList1)
+
 
 // get the arraay from the objects 
 for (i=0; i<Questions.length; i++) {
@@ -44,11 +65,5 @@ var answerArrary = Questions[i].answer
 console.log(answerArrary)
 }
 
-// for (i=0; i < answerArrary.length; i++) {
-//     optionList1.push(answerArrary[i]);
-//     answerArrary.splice(i, 1)
-//     i--
-// }
 
-// console.log(answerArrary)
 
