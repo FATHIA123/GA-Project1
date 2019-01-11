@@ -49,7 +49,7 @@ J.innerHTML = score + "/" + 7
 
 R.addEventListener("click", function () {reset();} )
 function reset () {
-     score = 0 
+     score = 0 ;
 
 }
 
@@ -59,7 +59,7 @@ setTimeout(function(){
     // reset();
     alert("time up"); }
 
-,3000);
+,12000);
 
 
 // modal

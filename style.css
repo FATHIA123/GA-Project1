@@ -1,20 +1,22 @@
 body {
     text-align: center;
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/817iyCn7ZzL._SR500,500_.jpg");
-    background-color: #BC8F8F;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/41WU4V9SDRL.jpg");
+    /* background-color: #D2B48C; */
 }
 
 
 
 #hero1 {
     height: 300px;
-    background-image: url("https://stmed.net/sites/default/files/forest-wallpapers-27863-9399161.jpg");
+    background-image: url("https://www.sheknows.com/wp-content/uploads/2018/08/homer-simpson-doughnuts.jpeg");
     background-repeat: no-repeat;
     border-radius: 0 0 0 500px;
+background-position: center;
+background-size: cover;
 }
 
 #Trivia {
-    color: whitesmoke;
+    color: black;
     line-height: 250px;
     font-size: 100px;
 }
