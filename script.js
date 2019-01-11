@@ -18,27 +18,28 @@ let score = 0 ;
 someClick.forEach(
     function(e, i) {
         e.addEventListener("click", function(){ 
-            var An1 = event.target.classList.contains('An') 
+            let An1 = event.target.classList.contains('An') 
             // console.log(An1)
             // console.log(answer)
             if (An1 === true) {
                     alert("correct")
-                    score++
-                    console.log(score)
-                } else {
-                        alert("wrong")
-                    }
-        });   
-    }
-)
+                    score = score+1
 
+var J = document.getElementById("score1")
+J.innerHTML = score + "/" + 7
+
+                } else {
+                    alert("wrong")
+                }
+                console.log(score)
+            });   
+        }
+        )
+        
 // score
 
-// if click = class "An" pop up correct 
 
-// incriment score value 
 
-// else console log wrong 
 
 // reset 
 
@@ -54,11 +55,42 @@ function reset () {
 
 
 
-// setTimeout(function(){ 
-    
-//     alert("Hello"); }
+setTimeout(function(){ 
+    // reset();
+    alert("time up"); }
 
-// ,6000);
+,3000);
+
+
+// modal
+
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.close');
+
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+  modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
 
 ////////////
 

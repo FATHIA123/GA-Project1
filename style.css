@@ -1,20 +1,20 @@
 body {
     text-align: center;
-    background-image: url("https://cdn.pixabay.com/photo/2016/08/01/14/55/skeleton-1561177__340.png");
-    background-color: beige;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/817iyCn7ZzL._SR500,500_.jpg");
+    background-color: #BC8F8F;
 }
 
 
 
 #hero1 {
     height: 300px;
-    background-image: url("https://stmed.net/sites/default/files/wallpaper-wallpapers-25347-2123783.jpg");
+    background-image: url("https://stmed.net/sites/default/files/forest-wallpapers-27863-9399161.jpg");
     background-repeat: no-repeat;
     border-radius: 0 0 0 500px;
 }
 
 #Trivia {
-    color: bisque;
+    color: whitesmoke;
     line-height: 250px;
     font-size: 100px;
 }
@@ -28,6 +28,7 @@ body {
     margin-right: auto;
     border-radius: 10px;
     margin-bottom: 10px;
+    background-color: #BC8F8F;
 }
 #Q1, #Q2, #Q3, #Q4, #Q5, #Q6, #Q7 {
     text-decoration: none;
@@ -46,4 +47,97 @@ body {
 }
 
 
+/* modal */
 
+:root {
+    --modal-duration: 1s;
+    --modal-color: #BC8F8F;
+  }
+ 
+  
+  .button {
+    background: #BC8F8F;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: #BC8F8F;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
