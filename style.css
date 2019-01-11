@@ -48,6 +48,9 @@ background-size: cover;
     background-color: gray;
 }
 
+#resetButton {
+    background-color: #BC8F8F;
+}
 
 /* modal */
 
