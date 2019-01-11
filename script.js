@@ -1,9 +1,5 @@
 
 
-
-
-
-
 let someClick = document.querySelectorAll(".click");
 let answer = document.querySelectorAll(".click.An");
 console.log(answer);
@@ -24,12 +20,19 @@ someClick.forEach(
             if (An1 === true) {
                     alert("correct")
                     score = score+1
+// collpase the card 
+                let uncollapseDiv = document.getElementsByClassName("collapse show")[0]
+                console.log(uncollapseDiv)
+                // let collapseDiv = document.getElementsByClassName("collapse")
+              console.log(uncollapseDiv.classList)
+              uncollapseDiv.classList.remove("show")
 
+   
 var J = document.getElementById("score1")
 J.innerHTML = score + "/" + 7
 
                 } else {
-                    alert("wrong")
+                    alert("wrong, try again!")
                 }
                 console.log(score)
             });   
