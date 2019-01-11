@@ -1,10 +1,4 @@
-If people don’t know why your project exists, they won’t use it.
 
-
-If people can’t figure out how to install your code, they won’t use it.
-
-
-If people can’t figure out how to use your code, they won’t use it.
 
 
 #Desription 
@@ -16,7 +10,64 @@ If people can’t figure out how to use your code, they won’t use it.
 
  - To play this game, you simply just have to pick what you assume to be the best answer. The game tells you whether you are right or wrong. Then the game keeps score of the amount of questions you have right. You can check your score by clicking on the "Score" button on the bottom half of the game. 
 
-   
+```html 
+<div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span id="Q1"> Who founded Springfield?</span>
+                    </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <button class="click O1"> Hans Springfield</button>
+                            <button class="click An"> Jebediah Springfield </button>
+                            <button class="click O1"> Shelbyville Manhattan</button>
+                            <button class="click O1"> Abraham Simpson</button>
+                    </div>
+                </div>
+                </div>
+        
+        
+ 
+
+the above code is the one entire card. The card is used to store the question and the answer. The questions and the answers are written directly onto the html card. Bootstrap is used to create this card. 
+
+
+```script    
+
+someClick.forEach(
+    function(e, i) {
+        e.addEventListener("click", function(){ 
+            let An1 = event.target.classList.contains('An') 
+            // console.log(An1)
+            // console.log(answer)
+            if (An1 === true) {
+                    alert("correct")
+                    score = score+1
+
+var J = document.getElementById("score1")
+J.innerHTML = score + "/" + 7
+
+                } else {
+                    alert("wrong")
+                }
+                console.log(score)
+            });   
+        }
+        )
+
+
+```
+
+this JS fucntion is the for loop that 
+
+
+
+
+
 
  #List of Technologies used 
 
